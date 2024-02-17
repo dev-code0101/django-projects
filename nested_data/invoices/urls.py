@@ -4,7 +4,7 @@ from .views import InvoiceViewSet, InvoiceDetailViewSet
 
 router = DefaultRouter()
 router.register(r'invoices', InvoiceViewSet)
-router.register(r'invoicedetails', InvoiceDetailViewSet)
+# router.register(r'invoicedetails', InvoiceDetailViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
